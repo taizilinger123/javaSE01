@@ -1,0 +1,135 @@
+Object 
+  1)类默认继承于Object,所以类的最终父类型是Object
+          体现：一切皆对象
+    Object  定义的变量可以引用任何类型的实例
+    Object  称为继承根。
+  2)Object  定义了很多基本方法，被子类型继承 
+    
+    tostring() 建议重写，返回这个对象的文本描述
+    equals()   建议重写，比较两个对象是否相等
+      ==  只能比较变量值， 不能用于比较对象是否相等。 
+    hashCode() 建议与equals一起重写。
+               当两个对象相等时候，hashCode()返回值一样
+               当两个对象不相等时候，hashCode()返回值尽量不同                           
+String 字符串
+  1)是系统核心的数据输入输出类！凡是界面上的文本信息都是
+   String.  
+    
+   int a = 120;
+   System.out.println(a);//"120"
+   System.out.println(String.valueOf(a));
+   
+  2)字符串对象是不可改变的！(String使用不变模式设计)
+  3)字符串的内部结构
+    String{ char[] + char[] 有关的算法！}
+          完全可以
+    {char[] + 算法}   替代  String API 方法
+               可以优化很快                      性能很好
+                  编码量大                           编码简洁
+
+    Tetromino {Cell[] + Cell[] 算法  }
+    
+    Stack(数据 + 数据算法)
+  4) "静态字符串"的优化现象
+    4.1)"静态字符串"  字面量， 常量， 和字面量常量的表达式
+              注意：字面量常量的表达式在编译期间运算， 优化为字面量
+    4.2)动态字符串，都是在运算期间堆中创建，不参与静态优化
+               动态字符串：使用new运算创建，变量连接结果
+    
+    典型试题：
+    String s = new String("ABC");
+          如上代码描述正确的是：
+     A 运行期间会创建两个字符串对象
+     B 运行期间会创建两个对象
+     C 运行期间会创建一个字符串对象
+     D 运行期间会创建一个个对象
+    
+  5) 字符串常用API方法(算法)
+     length()返回字符串的长度
+     charAt()
+     toUpperCase()
+     indexOf()
+     endsWith()
+     startsWith()
+     substring()
+     trim()
+  
+  正则表达式：
+     1) 是字符串的检索匹配规则
+            如：
+       regex(匹配规则): hi 
+	       被检索的文本(字符串): hi, i am tom in china
+	       检索结果:
+	   Found "hi" starting index 0 ending index 2
+	   Found "hi" starting index 17 ending index 19
+     2)正则表达式使用广泛：eclipse linux java c# PHP ...
+     3)是字符序列匹配规则
+                如：hi 表示匹配两个字符的序列，第一个是h第二个i 
+     4)字符集：匹配多个字符的某一个
+                如：h[ijk]表示匹配两个字符的序列，第一个是h第二个i/j/k 
+         [0123456789]表示匹配1个字符，是数字字符
+         
+                数字字符集：[0123456789]  == [0-9] == \d  
+                          
+                检索邮政编码：
+          [0-9][0-9][0-9][0-9][0-9][0-9]  
+          \d\d\d\d\d\d   \d{6}
+          
+                预定义(缩写)字符集
+          \d 数字字符
+          \w 单词字符 == [a-zA-Z0-9_]
+          \s 空白字符
+                          . 任意一个字符
+          
+          \D 非数字
+          \S 非空白
+          \W 非单词字符         
+          
+           
+     5)数量词 
+       X{n}    n个X
+       X{n,m}  n到m个X
+       X{n,}   n个以上X
+                 缩写(预定义)数量词
+        ? == {0,1}
+        + == {1,}
+        * == {0,}
+        
+     6)边界匹配
+                    ^ 字符串开始
+                    $ 字符串结束 
+            详细参考：java.util.regex.Pattern     
+     http://jszx-jxpt.cuit.edu.cn/JavaAPI/overview-summary.html
+     JavaTM 2 Platform Standard Edition 5.0 API 规范          
+     7)正则表达式的应用：
+                 表单验证：
+                 用户名规则：从头到尾连续8~10个单词字符
+                      正则规则：^\w{8,10}$
+                                
+       
+     8)java String 中对正则表达式的支持
+       match(正则表达式)
+                 将一个字符串与正则表达式进行匹配，如果匹配成功就返回true,否则返回false
+       
+       String name = "hi1234";
+       boolean pass = name.matches("^\\w{8,10}$");false
+                  
+             
+      
+     
+    
+    
+    
+                        
+               
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
