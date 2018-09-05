@@ -39,6 +39,13 @@ List集合的实现类
 ArrayList:内部使用数组实现的集合
 LinkedList:使用链表方式实现的集合
 
+List接口中定义的方法
+get(int  index):获取指定位置的元素.
+
+set(int index, Object  obj):将指定位置上的元素替换为给定元素，返回被替换
+的元素。
+
+
 
 
 
