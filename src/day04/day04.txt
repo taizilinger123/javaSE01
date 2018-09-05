@@ -1,0 +1,70 @@
+int[]  array  = new int[10];
+array[0];
+
+数组的弊端：
+  1：数组需要定义长度，这在不知道数据量的前提下使用是比较麻烦的，因为要
+  频繁的对数组进行扩容。
+  2：当向数组中插入元素时，其余元素都要向后移动，这也为我们使用数组提供了
+  额外的维护数组的代码量
+  
+java中的集合框架
+Collection接口
+该接口定义了集合的相关特征
+
+该接口派生了两个子接口
+List:可重复集(同一个元素可以放入若干次)
+         这里所谓同一个元素指的是equals为true
+         有序集
+Set:不可重复集
+         无序集
+         
+Collection定义的方法
+int  size():返回集合中的元素数量
+boolean  isEmpty():判断集合是否为空集合
+boolean  contains(Object  o):判断集合是否包含指定的元素
+
+void  clear():清空集合
+
+boolean add(E e):向集合中添加元素
+
+boolean  remove(E e):从集合中删除指定元素
+
+boolean  addAll(Collection c):将给定集合中的所有元素添加到当前集合（并集）
+
+boolean  removeAll(Collection c):删除当前集合中与给定集合相同的元素
+
+Iterator iterator():返回遍历数组的地迭代器
+
+List集合的实现类
+ArrayList:内部使用数组实现的集合
+LinkedList:使用链表方式实现的集合
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+   
+  
