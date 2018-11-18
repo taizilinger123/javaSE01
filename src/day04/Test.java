@@ -1,16 +1,18 @@
 package day04;
 
-import java.awt.Point;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Test {
-
+    /**
+     * 
+     * @param args
+     */
 	public static void main(String[] args) {
-          Point  p  = new  Point();
-          Point  p1 = new  Point();
-          
-          boolean  tf = p1 == p;
-          boolean  eq = p1.equals(p);
-          
+          List  list = new ArrayList();
+          list.add("String");
+          list.add(123);
+          list.add(list);
 
 	}
 }
