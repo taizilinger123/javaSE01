@@ -1,0 +1,10 @@
+增强for循环   新循环  1.5以后出现的
+新循环的作用是简化了遍历集合和数组的操作，
+换言之新循环就是为了遍历集合和数组使用的
+for(element_type  e :  list_array){
+}
+
+List集合的subList方法
+获取当前集合的子集
+
+List subList(int start,  int  end)
