@@ -37,3 +37,30 @@ Sub s1()
       End If
    Next rg
 End Sub
+
+Sub t4()
+Dim x As Integer
+  x = 1
+  Do
+     x = x + 1
+     Cells(x, 4) = Cells(x, 2) * Cells(x, 3)
+  Loop Until x = 18
+End Sub
+
+Sub s2()
+  Dim x As Integer
+  Do
+    x = x + 1
+    If Cells(x + 1, 1) <> Cells(x, 1) + 1 Then
+       Cells(x, 2) = "¶Ïµã"
+    End If
+  Loop Until x = 14
+End Sub
+
+Sub t5()
+    x = 1
+    Do While x < 18
+       x = x + 1
+       Cells(x, 4) = Cells(x, 2) * Cells(x, 3)
+    Loop
+End Sub
