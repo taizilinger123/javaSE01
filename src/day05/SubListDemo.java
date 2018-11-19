@@ -27,6 +27,7 @@ public class SubListDemo {
 			subList.set(i, sub);	//3步合成1步:subList.set(i, subList.get(i)*10)		
 		}
 		System.out.println(subList);//[30,40,50,60,70]
-		System.out.println(list);
+		//对子集的修改会影响原集合
+		System.out.println(list);//[0,1,2,30,40,50,60,70,8,9]
 	}
 }

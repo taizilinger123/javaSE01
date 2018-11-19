@@ -8,3 +8,39 @@ List集合的subList方法
 获取当前集合的子集
 
 List subList(int start,  int  end)
+
+数据结构
+队列Queue:
+队列用于存储一组数据，但是对于存取方式有一定的要求，
+必须遵循先进先出原则(FIFO)
+First Input  First  Output
+
+Queue常用的子类实现LinkedList
+队列的方法:
+boolean offer(E e):向对列末尾追加一个元素追加成功返回true
+E  poll():从队首取出元素(取出后就从队列中删除了该元素)
+E peek():获取队首元素，但不删除。
+
+栈结构(Deque)
+Deque是Queue的子接口
+使用双端队列时，我们若只允许元素都一个方向进出，则实现了栈结构，
+栈结构存取元素要本着先进后出原则(FILO)First Input  Last  Output
+
+LinkedList实现了Deque
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
