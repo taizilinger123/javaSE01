@@ -28,6 +28,20 @@ Deque是Queue的子接口
 
 LinkedList实现了Deque
 
+Comparable接口
+在对数组或集合元素进行排序时，首先要确定比较大小，有了结论才可以
+进行排序，而如何比较大小，则需要实现该接口，并实现其中的抽象方法
+来定义比较规则。
+Arrays在对数组进行排序时，比较每个元素大小时就会调用这些元素的
+compareTo方法进行比较，而这个方法就是comparable接口定义的
+
+排序集合：
+Collections集合的工具类
+其中有一个方法是sort,用于排序集合
+
+java中的很多类都实现了Comparable接口。例如：String,Integer等
+
+
 
 
 
