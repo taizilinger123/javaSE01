@@ -60,7 +60,8 @@ public class ComparatorDemo {
  * ctrl+z退回上一步操作
  * 当ctrl+z不能返回时候，代码空白处右键Replace With---->Local History会保存每一次的ctrl+s---->
  * 返回任何一个之前的版本
- * 在项目文件夹上右键---->Team--->Commit---->Repository---->Push  to  Upstream就上传到自己的github上了。
+ * 在项目文件夹上右键---->Team--->Commit---->Repository---->Push  to  Upstream就上传到自己的github上了
+ * 空白处右键Source->Generate  hashCode()  and  equals()
  */
 class  MyComparator  implements  Comparator<String>{
 	/**
