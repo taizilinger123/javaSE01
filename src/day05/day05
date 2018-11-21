@@ -41,6 +41,17 @@ Collections集合的工具类
 
 java中的很多类都实现了Comparable接口。例如：String,Integer等
 
+像字符串这样JDK提供的类，他们自身已经定义了比较规则，但是当比较
+规则不能满足我们对排序的要求时，我们则需要另外指定比较规则
+例如：按照字符串中字符的多少进行比较
+Collections提供了一个重载的排序方法
+sort(Collection  c, Comparator com)
+Comparator接口
+比较器，用来定义比较规则
+当调用Collections的sort(Collection  c, Comparator com)方法时
+，该方法在排序集合时，不使用集合中元素自身的比较规则，而是使用我
+们提供的比较器中的比较规则进行比较后再进行排序的。
+
 
 
 
