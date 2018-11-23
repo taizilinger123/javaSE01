@@ -8,7 +8,6 @@ import java.util.Set;
  * Set集合是无序的，所以没有get方法
  * 只能通过迭代器的方式获取元素
  * @author sige
- *
  */
 public class IterateSet {
       public static void main(String[] args) {
