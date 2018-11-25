@@ -62,6 +62,7 @@ public class ComparatorDemo {
  * 返回任何一个之前的版本
  * 在项目文件夹上右键---->Team--->Commit---->Repository---->Push  to  Upstream就上传到自己的github上了
  * 空白处右键Source->Generate  hashCode()  and  equals()
+ * 按住ctrl鼠标点击HashSet就能跳转到方法的实现了，能看源码了
  */
 class  MyComparator  implements  Comparator<String>{
 	/**
