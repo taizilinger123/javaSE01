@@ -1,0 +1,49 @@
+HashSet存取元素需要依靠元素的
+hashcode()方法的返回值
+hashcode()方法是Object定义的方法
+
+public  int  hashCode()
+重写该方法时要注意：
+1：应与equals方法的一致：当两个对象equals方法
+比较为true时，hashCode()方法返回的数字应该相同
+2：不同的对象hashCode()值应尽量避免相同
+
+数据结构 Map  
+Map接口定义的集合包含两部分，
+key-value以键值对的形式保存元素
+可以把map看作是一个多行两列的表格
+
+根据内部实现的不同，我们常使用HashMap
+也有通过二叉树实现的TreeMap 
+在Map中，key是不重复的。
+
+存取数据的方法
+V  put(K  k, V  v):根据给定的key存放给定的value.
+若使用已存在的key存放元素，那么就是替换value操作，返回值则是
+被替换的元素。否则返回null。
+
+V  get(Object k):根据给定的key获取对应的value,若key在map中
+不存在，则返回null
+
+boolean  containsKey(Object  k)
+查看当前map中是否有给定的key 
+
+boolean containsValue(Object  v)
+查看当前map中是否有给定的value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
