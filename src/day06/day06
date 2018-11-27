@@ -31,6 +31,39 @@ boolean  containsKey(Object  k)
 boolean containsValue(Object  v)
 查看当前map中是否有给定的value
 
+HashMap的性能
+Capacity容量：HashMap中散列数组的大小。
+initial  capacity初始容量：
+创建HashMap时，默认创建的散列数组的大小，这个默认值为16。
+
+size大小：HashMap中存放的数据量
+
+loadfactor加载因子：加载因子的默认值为0.75,该值是通过size/capacity
+得到的比值。当存储的数据量超过了比值0.75时，会对散列数组进行扩容，并
+对hashmap中原来的所有元素重新计算并存入新数组。
+
+遍历map
+遍历map有三种方式
+获取所有的key 
+获取所有的value:不太常用
+获取所有的key-value 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
